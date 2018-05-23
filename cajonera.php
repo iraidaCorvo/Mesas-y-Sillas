@@ -2,7 +2,7 @@
 class cajonera extends mueble{
     private $numCajones='';
     
-    function __construct($material, $color, $numCajones){
+    function __construct($color, $material, $numCajones){
         parent::__construct($color, $material);
         $this->numCajones= $numCajones;
     }

@@ -5,6 +5,9 @@ class mesa extends mueble{
     private $radio='';
     private $alto='';
     private $ancho='';
+    
+    define("Redonda", "Redonda");
+    define("Cuadrada", "Cuadrada");
 
     function __construct($color, $material, $numPatas, $forma, $radio, $alto, $ancho){
         parent::__construct($color, $material);
@@ -22,7 +25,12 @@ class mesa extends mueble{
             }
 
     }
+    public function generarMesaCuadrada($alto){
+        
+    }
+    public function generarMesaRedonda($radio){
 
+    }
     public function printCaracteristicas(){
         echo '<br>';
         echo 'MESA:';

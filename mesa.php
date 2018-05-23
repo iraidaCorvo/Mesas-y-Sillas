@@ -1,13 +1,15 @@
 <?php
+    
+    define( 'Redonda', 'Redonda');
+    define( 'Cuadrada', 'Cuadrada');
+    
 class mesa extends mueble{
     private $numPatas='';
     private $forma='';
     private $radio='';
     private $alto='';
     private $ancho='';
-    
-    define("Redonda", "Redonda");
-    define("Cuadrada", "Cuadrada");
+
 
     function __construct($color, $material, $numPatas, $forma, $radio, $alto, $ancho){
         parent::__construct($color, $material);

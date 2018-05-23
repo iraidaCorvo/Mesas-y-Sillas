@@ -4,11 +4,8 @@ class silla extends mueble{
     private $respaldo='';
     private $cojin='';
 
-    function __construct($color, $material, $numPatas, $respaldo, $cojin){
+    function __construct($color, $material){
         parent::__construct($color, $material);
-        //$this->numPatas=$numPatas;
-        $this->respaldo=$respaldo;
-        $this->cojin=$cojin;
     }
 
     function __get($name){

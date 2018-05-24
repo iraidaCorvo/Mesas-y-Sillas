@@ -9,6 +9,9 @@ $miMaquinaria->printCaracteristicas();
 
 $misilla = new silla('Blanco', 'Madera', 3, 'Redondo', 'Cuadrado');
 $misilla->printCaracteristicas();
+$misilla->Numpatas = 5; 
+echo $misilla->Numpatas; 
+
 
 $mimesa = new mesa('Negro', 'Madera', 4, 'Cuadrada', 40, 140, 40);
 $mimesa->printCaracteristicas();

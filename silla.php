@@ -1,6 +1,5 @@
 <?php
 class silla extends mueble{
-    
     private $numpatas='';
     private $respaldo='';
     private $cojin='';
@@ -23,29 +22,33 @@ class silla extends mueble{
     function __set($name, $value){
         switch($name):
             case 'Numpatas':
-                return $this->numpatas = $value; 
+                 $this->numpatas = $value; 
                 break;
             case 'Respaldo':
-                return $this->respaldo=$value;
+                 $this->respaldo=$value;
                 break;
             case 'Cojin':
-                return $this->cojin=$value;   
+                 $this->cojin=$value;   
                 break;
                  
         endswitch;
     }
     
-    public function printCaracteristicas(){
+    public function render(){
     
         echo '<br>';
         echo 'SILLA:';
         echo '<br>';
-        parent::printCaracteristicas();
-        echo 'Respaldo: '. $this->respaldo;
+        parent::render();
+        echo 'Respaldo: '. $this->Respaldo;
         echo '<br>';
-        echo 'Numero Patas: '. $this->NumPatas;
+        echo 'Numero Patas: '. $this->Numpatas;
+
         echo '<br>';
-        echo 'Cojin: '. $this->cojin;
+        echo 'Cojin: '. $this->Cojin;
         echo '<br>';
+    }
+    public function toString(){
+        return $this->render();
     }
 }

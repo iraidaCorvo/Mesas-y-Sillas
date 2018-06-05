@@ -22,11 +22,14 @@ class mueble{
         $this->material=$material;
     }
     
-    public function printCaracteristicas(){
+    public function render(){
         echo 'Color: '. $this->color;
         echo '<br>';
         echo 'Material:'. $this->material;
         echo '<br>';
+    }
+    public function toString(){
+        return $this->render();
     }
     
 }

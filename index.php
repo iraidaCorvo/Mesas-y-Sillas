@@ -5,16 +5,24 @@ include_once 'mesa.php';
 include_once 'cajonera.php';
 
 $miMaquinaria = new mueble('Verde', 'Cuero');
-$miMaquinaria->printCaracteristicas();
+$miMaquinaria->toString();
 
-$misilla = new silla('Blanco', 'Madera', 3, 'Redondo', 'Cuadrado');
-$misilla->printCaracteristicas();
+$misilla = new silla('Blanco', 'Madera');
 $misilla->Numpatas = 5; 
-echo $misilla->Numpatas; 
+$misilla->Respaldo = 'Cuadrado'; 
+$misilla->Cojin = 'Redondo'; 
+$misilla->toString();
+//echo $misilla->Numpatas; 
 
 
-$mimesa = new mesa('Negro', 'Madera', 4, 'Cuadrada', 40, 140, 40);
-$mimesa->printCaracteristicas();
+$mimesa = new mesa('Negro', 'Madera');
+$mimesa->Numpatas = 4; 
+$mimesa->Forma = 'Cuadrada'; 
+$mimesa->Radio = 40; 
+$mimesa->Alto = 140; 
+$mimesa->Ancho = 40; 
+echo $mimesa->Alto;
+$mimesa->toString();
 
 
 $micajonera = new cajonera('Marron', 'Madera', 4);
